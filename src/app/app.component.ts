@@ -1,10 +1,18 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterOutlet, RouterModule } from '@angular/router';
+import { FooDirective } from './foo.directive';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  template: `
+     <a routerLink="/">home</a>
+     <a routerLink="/todos">Todos</a>
+     <div appFoo>Foo</div>
+     <router-outlet></router-outlet>
+  `,
+  standalone: true,
+  imports: [FooDirective, CommonModule, RouterModule, RouterOutlet],
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'ng15';
-}
+export class AppComponent {}
