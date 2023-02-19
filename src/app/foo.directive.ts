@@ -6,7 +6,6 @@ import { Directive, OnInit } from '@angular/core';
 })
 export class FooDirective implements OnInit{
 
-  constructor() { }
   ngOnInit(): void {
     console.log('FOO');
 
