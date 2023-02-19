@@ -7,7 +7,7 @@ import { FooDirective } from './foo.directive';
   selector: 'app-root',
   template: `
      <a routerLink="/">home</a>
-     <a routerLink="/todos">Todos</a>
+     <a routerLink="/todos">todo</a>
      <div appFoo>Foo</div>
      <router-outlet></router-outlet>
   `,
