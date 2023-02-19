@@ -1,3 +1,6 @@
 {
+  "compilerOptions": {
+    "experimentalDecorators": true
+  },
   "typeAcquisition": { "include": ["jest"] }
 }
